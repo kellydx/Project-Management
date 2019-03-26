@@ -7,6 +7,7 @@ class CardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Card
+        fields = '__all__' 
 
 
 class ListSerializer(serializers.ModelSerializer):
@@ -14,6 +15,7 @@ class ListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = List
+        fields = '__all__' 
 
 
 
