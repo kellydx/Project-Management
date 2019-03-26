@@ -21,3 +21,7 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+*.pyc
+db.sqlite3
+*.sqlite3
+projectManagement/__pycache__/settings.cpython-36.pyc
