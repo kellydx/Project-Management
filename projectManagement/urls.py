@@ -17,7 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
-from django.conf.urls import include
+from django.conf.urls import url,include
+from django.views.decorators.csrf import ensure_csrf_cookie
 
 
 urlpatterns = [
