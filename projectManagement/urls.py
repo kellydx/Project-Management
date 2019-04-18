@@ -16,10 +16,13 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
 from django.conf.urls import include
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^$', ensure_csrf_cookie(TemplateView.as_view(template_name="home.html"))),
     path('scrumboard/', include ('scrumboard.urls')),
+    url(r'^auth_api/', include('auth_api.urls'))
 ]
